@@ -47,9 +47,6 @@ from run_bngl_ZAP import run_bionetgen_ZAP
 from SYK_SSR import SYK_only
 from run_bngl_SYK import run_bionetgen_SYK
 
-from WT_SSR import WT
-from run_bngl_WT import run_bionetgen_WT
-
 
 
 def ca_cost_func(param):
@@ -81,13 +78,6 @@ def ca_cost_func(param):
     SSR_SYK=SYK_only(n,K1,KSA,KST,C1s,C2s,gs,time_SYK,exp_data_SYK,cblb,dir_name)
 
 
-    
-    #WT
-    SSR_WT=WT(n,K3,C1,C2,g,K1,KSA,KST,C1s,C2s,gs,time_WT,exp_data_WT,cblb,dir_name)
-    
-
-
- 
     cost_sum=SSR_ZAP+SSR_SYK
     return cost_sum   
     
