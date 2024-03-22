@@ -53,7 +53,7 @@ def ca_cost_func():
 # =============================================================================
   
     
-    n=1#average of howmany bionetgen run
+    n=5#average of howmany bionetgen run
 
 
 

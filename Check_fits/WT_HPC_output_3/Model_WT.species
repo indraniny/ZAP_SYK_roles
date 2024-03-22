@@ -1,0 +1,18 @@
+# nfsim generated species list for system: 'Model_WT'
+# warning! this feature is not yet fully tested! 
+A(State~PZAP,CBL)  87
+A(State~SHP,CBL)  4497
+A(State~UZAP!1,CBL).Zeta(receptor!2,ITAM1~PP!3,ITAM2~PP!1,ITAM3~PP!4,ITAM4~PP!5,ITAM5~PP!6,ITAM6~PP!7).CD16(lig!8,receptor!2).A(State~UZAP!3,CBL).A(State~UZAP!4,CBL!9).A(State~UZAP!5,CBL).A(State~uSYK!6,CBL).A(State~UZAP!7,CBL).Ligand(Site!8).CBL(site!9)  1
+A(State~UZAP!1,CBL).Zeta(receptor!2,ITAM1~PP!3,ITAM2~PP!1,ITAM3~PP!4,ITAM4~PP!5,ITAM5~PP!6,ITAM6~PP!7).CD16(lig!8,receptor!2).A(State~uSYK!3,CBL).A(State~UZAP!4,CBL).A(State~uSYK!5,CBL).A(State~uSYK!6,CBL!9).A(State~UZAP!7,CBL).Ligand(Site!8).CBL(site!9)  1
+A(State~UZAP!1,CBL).Zeta(receptor!2,ITAM1~PP!3,ITAM2~PP!4,ITAM3~PP!1,ITAM4~PP!5,ITAM5~PP!6,ITAM6~PP!7).CD16(lig!8,receptor!2).A(State~UZAP!3,CBL).A(State~uSYK!4,CBL).A(State~UZAP!5,CBL).A(State~UZAP!6,CBL).A(State~uSYK!7,CBL).Ligand(Site!8)  1
+A(State~UZAP!1,CBL).Zeta(receptor!2,ITAM1~PP!3,ITAM2~PP!4,ITAM3~PP!1,ITAM4~PP!5,ITAM5~PP!6,ITAM6~PP!7).CD16(lig!8,receptor!2).A(State~uSYK!3,CBL).A(State~UZAP!4,CBL).A(State~UZAP!5,CBL).A(State~uSYK!6,CBL).A(State~UZAP!7,CBL).Ligand(Site!8)  1
+A(State~UZAP,CBL)  21556
+A(State~pSYK,CBL)  81
+A(State~uSYK,CBL)  13905
+CBL(site)  937
+CD16(lig!1,receptor!2).Ligand(Site!1).Zeta(receptor!2,ITAM1~U,ITAM2~PP,ITAM3~U,ITAM4~U,ITAM5~U,ITAM6~U)  1
+CD16(lig!1,receptor).Ligand(Site!1)  71
+CD16(lig,receptor)  3
+LCK()  9750
+Ligand(Site)  1424
+Zeta(receptor,ITAM1~U,ITAM2~U,ITAM3~U,ITAM4~U,ITAM5~U,ITAM6~U)  74
