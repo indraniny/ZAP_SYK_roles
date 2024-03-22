@@ -68,6 +68,7 @@ plt.plot(time, interpolated_model_data, color='black', linewidth=b, label='Model
 r2 = r_squared(exp_data, interpolated_model_data)
 print("R-squared:", r2)
 
+
 # #SYK only
 # plt.scatter(time_SYK, exp_data_SYK, s=point_size, c='none', edgecolors='cornflowerblue', marker='o', label='Expt')
 # #plt.scatter(time_SYK, exp_data_SYK, s=point_size, c='none', edgecolors='blue', marker='o', label='Expt')
@@ -108,6 +109,41 @@ ax.spines['right'].set_linewidth(a)
 ax.spines['top'].set_linewidth(a)  # Adjust the top spine's line width
 #plt.legend()
 plt.show()
+
+
+#Plot R^2
+print(exp_data)
+print(interpolated_model_data)
+
+plt.plot(exp_data,interpolated_model_data, 'ks')
+# plt.scatter(time,exp_data, s=point_size, c='none',edgecolors='black', label='Expt')
+# plt.plot(time, interpolated_model_data, color='black', linewidth=b, label='Model')
+# Calculate R-squared
+r2 = r_squared(exp_data, interpolated_model_data)
+print("R-squared:", r2)
+
+
+plt.xticks(fontname='Arial')
+plt.yticks(fontname='Arial')
+
+# x_ticks = np.arange(0, 0.5, 0.15)
+# plt.yticks(x_ticks)
+
+
+
+manual_y_ticks = [ 0.3, 0.4,0.5]
+manual_y_tick_labels = ['0.3', '0.4','0.5']
+plt.yticks(manual_y_ticks, manual_y_tick_labels, fontsize=oo)
+
+# Customize the axes line width
+ax = plt.gca()  # Get the current axes
+ax.spines['left'].set_linewidth(a)  # Adjust the left spine's line width
+# Adjust the bottom spine's line width
+ax.spines['bottom'].set_linewidth(a)
+# Adjust the right spine's line width
+ax.spines['right'].set_linewidth(a)
+ax.spines['top'].set_linewidth(a)  # Adjust the top spine's line width
+show()
 
 
 #Ca only
