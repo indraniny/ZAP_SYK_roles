@@ -5,13 +5,13 @@ Created on Fri Feb 16 10:44:04 2024
 
 @author: ixn004
 """
-
+from sklearn.metrics import r2_score 
 import numpy as np
 import matplotlib.pyplot as plt
 
 def r_squared(X, Y):
-    mean_Y = np.mean(Y)
-    total_sum_squares = np.sum((Y - mean_Y)**2)
+    mean_X = np.mean(X)
+    total_sum_squares = np.sum((X - mean_X)**2) #expt
     residual_sum_squares = np.sum((Y - X)**2)
     r2 = 1 - (residual_sum_squares / total_sum_squares)
     return r2
@@ -56,27 +56,29 @@ point_size = 35
 b=3
 a=3 #boxwidth
 # # #mixed
-plt.scatter(time, exp_data, s=point_size, c='none',edgecolors='black', marker='o', label='Expt')
-plt.plot(TT, MODEL, color='black', linewidth=b, label='Model')
+# plt.scatter(time, exp_data, s=point_size, c='none',edgecolors='black', marker='o', label='Expt')
+# plt.plot(TT, MODEL, color='black', linewidth=b, label='Model')
 
 
 interpolated_model_data = np.interp(time, TT, MODEL)
-plt.scatter(time,exp_data, s=point_size, c='none',edgecolors='black', label='Expt')
-plt.plot(time, interpolated_model_data, color='black', linewidth=b, label='Model')
+# plt.scatter(time,exp_data, s=point_size, c='none',edgecolors='black', label='Expt')
+# plt.plot(time, interpolated_model_data, color='black', linewidth=b, label='Model')
 
-# Calculate R-squared
+# # Calculate R-squared
 r2 = r_squared(exp_data, interpolated_model_data)
 print("R-squared:", r2)
-
+r2 = r2_score(exp_data, interpolated_model_data)
+print("R-squared_python:", r2)
+print(len(exp_data))
 
 # #SYK only
 # plt.scatter(time_SYK, exp_data_SYK, s=point_size, c='none', edgecolors='cornflowerblue', marker='o', label='Expt')
 # #plt.scatter(time_SYK, exp_data_SYK, s=point_size, c='none', edgecolors='blue', marker='o', label='Expt')
 # plt.plot(TT_SYK, MODEL_SYK, color='blue', linewidth=b, label='Model')
 
-# #ZAP only
-# plt.scatter(time_ZAP, exp_data_ZAP, s=point_size, c='none', edgecolors='red', marker='o', label='Expt')
-# plt.plot(TT_ZAP, MODEL_ZAP, color='maroon', linewidth=b, label='Model')
+# # #ZAP only
+plt.scatter(time_ZAP, exp_data_ZAP, s=point_size, c='none', edgecolors='red', marker='o', label='Expt')
+plt.plot(TT_ZAP, MODEL_ZAP, color='maroon', linewidth=b, label='Model')
 
 
 
@@ -115,7 +117,7 @@ plt.show()
 print(exp_data)
 print(interpolated_model_data)
 
-plt.plot(exp_data,interpolated_model_data, 'ks')
+#plt.plot(exp_data,interpolated_model_data, 'ks')
 # plt.scatter(time,exp_data, s=point_size, c='none',edgecolors='black', label='Expt')
 # plt.plot(time, interpolated_model_data, color='black', linewidth=b, label='Model')
 # Calculate R-squared
