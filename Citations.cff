@@ -1,2 +1,10 @@
-
-Duan, L., Reddi, A. L., Ghosh, A., Dimri, M., & Band, H. (2004). The Cbl family and other ubiquitin ligases: destructive forces in control of antigen receptor signaling. Immunity, 21(1), 7-17.
+@article{duan2004cbl,
+  title={The Cbl family and other ubiquitin ligases: destructive forces in control of antigen receptor signaling},
+  author={Duan, Lei and Reddi, Alagarsamy Lakku and Ghosh, Amiya and Dimri, Manjari and Band, Hamid},
+  journal={Immunity},
+  volume={21},
+  number={1},
+  pages={7--17},
+  year={2004},
+  publisher={Elsevier}
+}
