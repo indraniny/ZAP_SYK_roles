@@ -1,4 +1,4 @@
-# Model development for the signaling reactions
+# Model development for the CD16 signaling reactions
 
 
 
