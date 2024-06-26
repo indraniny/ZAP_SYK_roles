@@ -16,7 +16,7 @@
 
 Additionally, we applied the kinetic proofreading scheme [^7] in our signaling model, which allows the breaking of all intermediate complexes into their free and unphosphorylated initial states with the rate (KPR) that is equal to the unbinding rate (koff) between the anti-CD16 antibody and CD16 receptor (see Table S1). 
 
-***Visualization of biochemical reaction rules***: The reaction rules for rule-based model are created using the Virtual Cell software [^8]. Then V-cell code is exported in .bngl (BioNetGen) format to run in Python language using PyBioNetGen library [24, 25]. The reaction rules can be visualized by loading .bngl file in the Virtual Cell (Vcell) software [26]. In our model, each ITAM on CD3ζ could be in ten states. For example, ITAM can be in unphosphorylated or partially phosphorylated state (U), fully phosphorylated state (PP), ITAM(PP) bound to ZAP70 (2 states for phosphorylated and unphosphorylated state), ITAM(PP) bound to SYK (2 states for phosphorylated and unphosphorylated state), ITAM(PP) bound to SHP-1, ITAM(U) bound to SYK (phosphorylated and unphosphorylated state) and SHP-1 (3 states). This can lead to ~610 number of different reaction species which will be computationally intensive to simulate numerically using standard ordinary differential equation- or Gillespie-based applications. Therefore, we opted for a rule-based version of Gillespie, Network Free Stochastic Simulator (NFSim) to handle our extensive CD16 signaling model for WT NK cells that significantly reduces simulation runtime [27].
+***Visualization of biochemical reaction rules***: The reaction rules for rule-based model are created using the Virtual Cell software [^8]. Then V-cell code is exported in .bngl (BioNetGen) format to run in Python language using PyBioNetGen library [^9][^10]. The reaction rules can be visualized by loading .bngl file in the Virtual Cell (Vcell) software [^11]. In our model, each ITAM on CD3ζ could be in ten states. For example, ITAM can be in unphosphorylated or partially phosphorylated state (U), fully phosphorylated state (PP), ITAM(PP) bound to ZAP70 (2 states for phosphorylated and unphosphorylated state), ITAM(PP) bound to SYK (2 states for phosphorylated and unphosphorylated state), ITAM(PP) bound to SHP-1, ITAM(U) bound to SYK (phosphorylated and unphosphorylated state) and SHP-1 (3 states). This can lead to ~6<sup>10</sup> number of different reaction species which will be computationally intensive to simulate numerically using standard ordinary differential equation- or Gillespie-based applications. Therefore, we opted for a rule-based version of Gillespie, Network Free Stochastic Simulator (NFSim) to handle our extensive CD16 signaling model for WT NK cells that significantly reduces simulation runtime [27].
 
 [^1]: Duan L, Reddi AL, Ghosh A, Dimri M, Band H. The Cbl family and other ubiquitin ligases: destructive forces in control of antigen receptor signaling. Immunity. 2004;21(1):7-17.
 
@@ -33,3 +33,12 @@ Additionally, we applied the kinetic proofreading scheme [^7] in our signaling m
 [^7]: McKeithan TW. Kinetic proofreading in T-cell receptor signal transduction. Proceedings of the national academy of sciences. 1995;92(11):5042-6.
 
 [^8]: Blinov ML, Schaff JC, Vasilescu D, Moraru II, Bloom JE, Loew LM. Compartmental and spatial rule-based modeling with virtual cell. Biophysical journal. 2017;113(7):1365-72.
+
+[^9]: Faeder JR, Blinov ML, Hlavacek WS. Rule-based modeling of biochemical systems with BioNetGen. Systems biology. 2009:113-67.
+
+[^10]: Ali Sinan Salgam JRF. PyBioNetGen - A lightweight BioNetGen CLI
+ 2021 [cited 2024]. Available from: https://pybionetgen.readthedocs.io/en/latest/.
+
+[^11]: Schaff J, Fink CC, Slepchenko B, Carson JH, Loew LM. A general computational framework for modeling cellular structure and function. Biophysical journal. 1997;73(3):1135-46.
+
+[^12]:
