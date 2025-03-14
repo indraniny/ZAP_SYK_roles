@@ -18,8 +18,8 @@ Additionally, we applied the kinetic proofreading scheme [^7] in our signaling m
 
 ***Visualization of biochemical reaction rules***: The reaction rules for rule-based model are created using the Virtual Cell software [^8]. Then V-cell code is exported in .bngl (BioNetGen) format to run in Python language using PyBioNetGen library [^9][^10]. The reaction rules can be visualized by loading .bngl file in the Virtual Cell (Vcell) software [^11]. In our model, each ITAM on CD3ζ could be in ten states. For example, ITAM can be in unphosphorylated or partially phosphorylated state (U), fully phosphorylated state (PP), ITAM(PP) bound to ZAP70 (2 states for phosphorylated and unphosphorylated state), ITAM(PP) bound to SYK (2 states for phosphorylated and unphosphorylated state), ITAM(PP) bound to SHP-1, ITAM(U) bound to SYK (phosphorylated and unphosphorylated state) and SHP-1 (3 states). This can lead to ~6<sup>10</sup> number of different reaction species which will be computationally intensive to simulate numerically using standard ordinary differential equation- or Gillespie-based applications. Therefore, we opted for a rule-based version of Gillespie, Network Free Stochastic Simulator (NFSim) to handle our extensive CD16 signaling model for WT NK cells that significantly reduces simulation runtime [^9].
 
-# Model related parameters
-The supplementary material for this paper is missing some pages. Therefore, we are sharing the complete Table (Supplementary Table 1) of model parameter values used in the simulation, along with their associated references.
+#Parameter values used in the Simulations
+The supplementary material for [this](https://academic.oup.com/jimmunol/advance-article/doi/10.1093/jimmun/vkaf012/8064673?login=true) paper has some missing pages in the end. Therefore, we are sharing the complete Table (Supplementary Table 1) of model parameter values used in the simulation, along with their associated references.
 [Supplementary Table 1](https://github.com/indraniny/ZAP_SYK_roles/blob/main/Millan%20Supplementary%20Materials.pdf)
 
 
