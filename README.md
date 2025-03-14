@@ -1,3 +1,6 @@
+# Link of the paper
+[SYK negatively regulates ITAM-mediated human NK cell signaling and CD19-CAR NK cell efficacy ](https://academic.oup.com/jimmunol/advance-article/doi/10.1093/jimmun/vkaf012/8064673?login=true)
+
 # Model development for the CD16 signaling reactions
 
 
