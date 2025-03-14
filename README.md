@@ -24,6 +24,7 @@ Additionally, we applied the kinetic proofreading scheme [^7] in our signaling m
 # Parameter values used in the Simulations
 
 The supplementary material for [this](https://academic.oup.com/jimmunol/advance-article/doi/10.1093/jimmun/vkaf012/8064673?login=true) paper has some missing pages in the end. Therefore, we are sharing the complete Table (Supplementary Table 1) of model parameter values used in the simulation, along with their associated references.
+
 [Supplementary Table 1](https://github.com/indraniny/ZAP_SYK_roles/blob/main/Millan%20Supplementary%20Materials.pdf)
 
 
