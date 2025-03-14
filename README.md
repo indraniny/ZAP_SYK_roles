@@ -20,7 +20,7 @@ Additionally, we applied the kinetic proofreading scheme [^7] in our signaling m
 
 # Model related parameters
 The supplementary material for this paper is missing some pages. Therefore, we are sharing the complete Table (Supplementary Table 1) of model parameter values used in the simulation, along with their associated references.
-
+[Supplementary Table 1](https://github.com/your-repository-link-to-supplementary-table)
 
 
 [^1]: Duan L, Reddi AL, Ghosh A, Dimri M, Band H. The Cbl family and other ubiquitin ligases: destructive forces in control of antigen receptor signaling. Immunity. 2004;21(1):7-17.
